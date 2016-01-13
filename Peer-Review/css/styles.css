@@ -1,0 +1,44 @@
+body {
+  background-color: #6F74FF;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+h1 {
+  text-align: center;
+  color: #4A585B;
+}
+
+hr {
+  color: #004451;
+}
+
+table li {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+a {
+  color: #423753;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #454BFF;
+}
+
+table, td, th {
+  border: 2px solid black;
+}
+
+th {
+  background-color: #D4D5FF;
+  color: #000000;
+}
+
+.footer {
+  font-weight: bold;
+  text-align: right;
+}

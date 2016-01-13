@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Command Line Interface (CLI)</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<h1>Command Line Interface (CLI)</h1>
+		<h2>Definition</h2>
+		<p>A command-line interface or command language interpreter (CLI), also known as command-line user interface, console user interface, and character user interface (CUI), is a means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text (command lines).</p>
+		<figure><a href="http://imgur.com/DK0ZmaP"><img src="http://i.imgur.com/DK0ZmaP.png" title="source: imgur.com" alt="Command Line Interface" /></a>
+		<figcaption>Figure: Command Line Interface (CLI)</figcaption></figure>
+		<hr>
+		<h2>CLI-Directories</h2>
+		<ul>
+			<li>$ pwd - Display path of current working directory</li>
+			<li>$ cd &#60;directory&#62; - Change directory to &#60;directory&#62;</li>
+			<li>$ cd .. - Navigate to parent directory</li>
+			<li>$ ls - List directory contents</li>
+			<li>$ ls -la - List detailed directory contents, including hidden files</li>
+			<li>$ mkdir &#60;directory&#62; - Create new directory named &#60;directory&#62;</li>
+		</ul>
+		<hr>
+		<h2>CLI-Output</h2>
+		<ul>
+			<li>$ cat &#60;file&#62; - Output the contents of &#60;file&#62;</li>
+			<li>$ less &#60;file&#62; - Output the contents of &#60;file&#62; using the less command (which supports pagination etc.)</li>
+			<li>$ head &#60;file&#62; - Output the first 10 lines of &#60;file&#62;</li>
+			<li>$ &#60;cmd&#62; &#60;file&#62; - Direct the output of &#60;cmd&#62; into &#60;file&#62;</li>
+			<li>$ &#60;cmd&#62; &#62;&#62; &#60;file&#62; - Append the output of &#60;cmd&#62; to &#60;file&#62;</li>
+			<li>$ &#60;cmd1&#62; | &#60;cmd2&#62; - Direct the output of &#60;cmd1&#62; to &#60;cmd2&#62;</li>
+			<li>$ clear - Clear the command line window</li>
+		</ul>
+		<hr>
+		<h2>CLI-Files</h2>
+		<ul>
+			<li>$ rm &#60;file&#62; - Delete &#60;file&#62;</li>
+			<li>$ rm -r &#60;directory&#62; - Delete &#60;directory&#62;</li>
+			<li>$ rm -f &#60;file&#62; - Force-delete &#60;file&#62;(add -r to force-delete a directory)</li>
+			<li>$ mv &#60;file-old&#62; &#60;file-new&#62; - Rename &#60;file-old&#62; to &#60;file-new&#62;</li>
+			<li>$ mv &#60;file&#62; &#60;directory&#62; - Move &#60;file&#62; to &#60;directory&#62;(possibly overwriting an existing file)</li>
+			<li>$ cp &#60;file&#62; &#60;directory&#62; - Copy &#60;file&#62; to &#60;directory&#62;(possibly overwriting an existing file)</li>
+			<li>$ cp -r &#60;directory1&#62; &#60;directory2&#62; - Copy &#60;directory1&#62; and its contents to &#60;directory2&#62;(possibly overwriting files in an existing directory)</li>
+			<li>$ touch &#60;file&#62; - Update file access & modification time (and create &#60;file&#62; if it doesn't exist)</li>
+		</ul>
+		<hr>
+		<h2>CLI-Permissions</h2>
+		<ul>
+			<li>$ chmod 755 &#60;file&#62; - Change permissions of &#60;file&#62; to 755</li>
+			<li>$ chmod -R 600 &#60;directory&#62; - Change permissions of &#60;directory&#62;(and its contents) to 600</li>
+			<li>$ chown &#60;user&#62;:&#60;group&#62; &#60;file&#62; - Change ownership of &#60;file&#62; to &#60;user&#62; and &#60;group&#62;(add -R to include a directory's contents)</li>
+		</ul>
+		<hr>
+		<h2>CLI-Search</h2>
+		<ul>
+			<li>$ find &#60;dir&#62; -name "&#60;file&#62;" - Find all files named &#60;file&#62; inside &#60;dir&#62;(use wildcards [*] to search for parts of filenames, e.g. "file.*")</li>
+			<li>$ grep "&#60;text&#62;" &#60;file&#62; - Output all occurrences of &#60;text&#62; inside &#60;file&#62;(add -i for case-insensitivity)</li>
+			<li>$ grep -rl "&#60;text&#62;" &#60;dir&#62; - Search for all files containing &#60;text&#62; inside &#60;dir&#62;</li>
+		</ul>
+		<hr>
+		<h2>CLI-Network</h2>
+		<ul>
+			<li>$ ping &#60;host&#62; - Ping &#60;host&#62; and display status</li>
+			<li>$ whois &#60;domain&#62; - Output whois information for &#60;domain&#62;</li>
+			<li>$ curl -0 &#60;url/to/file&#62; - Download &#60;file&#62;(via HTTP[S] or FTP)</li>
+			<li>$ ssh &#60;username&#62;@&#60;host&#62; - Establish an SSH connection to &#60;host&#62; with user &#60;username&#62;</li>
+			<li>$ scp &#60;file&#62;<br>&#60;user&#62;@&#60;host&#62;:/remove/path - Copy &#60;file&#62; to a remote &#60;host&#62;</li>
+		</ul>
+		<hr>
+		<h2>CLI-Processes</h2>
+		<ul>
+			<li>$ ps ax - Output currently running processes</li>
+			<li>$ top - Display live information about currently running processes</li>
+			<li>$ kill &#60;pid&#62; - Quit process with ID &#60;pid&#62;</li>
+		</ul>
+		<hr>
+		<h2>Advantages</h2>
+		<ol>
+			<li>Requires fewer resources.</li>
+			<li>Concise and powerful.</li>
+			<li>'Expert' - friendly.</li>
+			<li>Easier to automate via scripting.</li>
+		</ol>
+		<hr>
+		<h2>Types of Interfaces</h2>
+		<table>
+			<tr>
+				<th>Command Line Interface (CLI)</th>
+				<th>Menu Driven Interface</th>
+				<th>Graphical User Interface (GUI)</th>
+				<th>Natural Language Interface</th>
+			</tr>
+			<tr>
+				<td>A CLI displays a prompt, the user types a command on the keyboard, the computer executes the command and provides textual output.
+					<ul>
+						<li>Very flexible with the use of "switches" (options)</li>
+						<li><strong>Good for "expert" users</strong> - can quickly access commands</li>
+						<li>Uses the fewest system resources</li>
+					</ul>
+				</td>
+				<td>The user has a list of items to choose from, and can make selections by highlighting one.</td>
+				<td>Uses windows, icons, menus and pointers (WIMP) which can be manipulated by a mouse (and often to an extent by a keyboard as well).
+					<ul>
+						<li>Most suitable interface for <em>inexperienced or novice users</em></li>
+						<li>Many generic packages for a GUI will share common features</li>
+					</ul>
+				</td>
+				<td>Can range from simple command systems to voice activated text processing. Commands are spoken in "normal" language.</td>
+			</tr>
+
+		</table>
+		<hr>
+		<h2>Resources</h2>
+		<p>Useful links for Command Line Interface (CLI)</p>
+		<ul>
+			<li><a href="https://en.wikipedia.org/wiki/Command-line_interface">Wikipedia</a></li>
+			<li><a href="http://searchwindowsserver.techtarget.com/definition/command-line-interface-CLI">TechTarget</a></li>
+			<li><a href="http://www.computerhope.com/jargon/c/commandi.htm">Computer Hope</a></li>
+			<li><a href="https://www.techopedia.com/definition/3337/command-line-interface-cli">Techopedia</a></li>
+			<li><a href="http://www.git-tower.com/blog/command-line-cheat-sheet/">Git Tower</a></li>
+		</ul>
+		<hr>
+		<p class="footer">Copyright &copy; 2016, Abdullah Alam</p>
+	</body>
+</html>
